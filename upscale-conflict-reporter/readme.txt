@@ -1,5 +1,5 @@
-=== Hamza Conflict Reporter ===
-Contributors: hamzar
+=== Upscale Conflict Reporter ===
+Contributors: upscalesolutions
 Tags: troubleshooting, conflicts, debugging, updates, health
 Requires at least: 6.0
 Tested up to: 7.1
@@ -14,7 +14,7 @@ Diagnose "site broke after an update" issues with a health snapshot, newest acti
 
 When a site breaks after updates, you need a calm checklist.
 
-**Hamza Conflict Reporter** adds a Tools screen that shows:
+**Upscale Conflict Reporter** adds a Tools screen that shows:
 
 * WordPress / PHP / theme snapshot
 * Active extensions sorted by newest file time
@@ -24,7 +24,7 @@ Use it on staging first. Deactivate newest suspects one at a time.
 
 == Installation ==
 
-1. Upload to `/wp-content/plugins/hamza-conflict-reporter`
+1. Upload to `/wp-content/plugins/upscale-conflict-reporter`
 2. Activate
 3. Open **Tools → Conflict Reporter**
 

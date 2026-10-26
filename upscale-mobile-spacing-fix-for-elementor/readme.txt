@@ -1,5 +1,5 @@
-=== Hamza Mobile Spacing Fix for Elementor ===
-Contributors: hamzar
+=== Upscale Mobile Spacing Fix for Elementor ===
+Contributors: upscalesolutions
 Tags: elementor, mobile, spacing, responsive, padding
 Requires at least: 6.0
 Tested up to: 7.1
@@ -12,7 +12,7 @@ Fix oversized Elementor padding and margins on mobile so pages stop looking brok
 
 == Description ==
 
-Hamza Mobile Spacing Fix for Elementor helps when desktop spacing looks fine but phones show huge gaps, tall spacers, or uneven section padding.
+Upscale Mobile Spacing Fix for Elementor helps when desktop spacing looks fine but phones show huge gaps, tall spacers, or uneven section padding.
 
 **Features**
 
@@ -26,7 +26,7 @@ Works best on Elementor-built pages.
 
 == Installation ==
 
-1. Upload the plugin folder to `/wp-content/plugins/hamza-mobile-spacing-fix-for-elementor`
+1. Upload the plugin folder to `/wp-content/plugins/upscale-mobile-spacing-fix-for-elementor`
 2. Activate via **Plugins**
 3. Go to **Settings → Elementor Mobile Spacing**
 4. Adjust limits and save

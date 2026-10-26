@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Hamza Shop CTA Normalizer for WooCommerce
+ * Plugin Name:       Upscale Shop CTA Normalizer for WooCommerce
  * Plugin URI:        https://github.com/hamzarafaqat1/woocommerce-portfolio-plugins
- * Description:       Makes WooCommerce shop/archive buttons consistent â€” normalize â€œAdd to cartâ€, â€œSelect optionsâ€, and â€œRead moreâ€ labels and styles.
+ * Description:       Makes WooCommerce shop/archive buttons consistent - normalize Add to cart, Select options, and Read more labels and styles.
  * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
- * Author:            Hamza R.
- * Author URI:        https://github.com/hamzarafaqat1
+ * Author:            Upscale Solutions
+ * Author URI:        https://upscalesolutions.digital
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       hamza-shop-cta-normalizer-for-woocommerce
+ * Text Domain:       upscale-shop-cta-normalizer-for-woocommerce
  * Requires Plugins:  woocommerce
  */
 
@@ -30,7 +30,7 @@ add_action(
 			add_action(
 				'admin_notices',
 				static function () {
-					echo '<div class="notice notice-error"><p>' . esc_html__( 'Hamza Shop CTA Normalizer for WooCommerce requires WooCommerce.', 'hamza-shop-cta-normalizer-for-woocommerce' ) . '</p></div>';
+					echo '<div class="notice notice-error"><p>' . esc_html__( 'Upscale Shop CTA Normalizer for WooCommerce requires WooCommerce.', 'upscale-shop-cta-normalizer-for-woocommerce' ) . '</p></div>';
 				}
 			);
 			return;

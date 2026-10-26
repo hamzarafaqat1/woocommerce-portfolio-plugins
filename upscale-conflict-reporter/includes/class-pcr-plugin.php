@@ -26,8 +26,8 @@ final class PCR_Plugin {
 	 */
 	public static function menu() {
 		add_management_page(
-			__( 'Conflict Reporter', 'hamza-conflict-reporter' ),
-			__( 'Conflict Reporter', 'hamza-conflict-reporter' ),
+			__( 'Conflict Reporter', 'upscale-conflict-reporter' ),
+			__( 'Conflict Reporter', 'upscale-conflict-reporter' ),
 			'manage_options',
 			'pcr-reporter',
 			array( __CLASS__, 'render' )
@@ -167,25 +167,25 @@ final class PCR_Plugin {
 		$log  = array_reverse( self::get_log() );
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Hamza Conflict Reporter', 'hamza-conflict-reporter' ); ?></h1>
-			<p><?php esc_html_e( 'Use this after â€œthe site brokeâ€ reports. Check what changed recently, then deactivate the newest plugins one by one on staging.', 'hamza-conflict-reporter' ); ?></p>
+			<h1><?php esc_html_e( 'Upscale Conflict Reporter', 'upscale-conflict-reporter' ); ?></h1>
+			<p><?php esc_html_e( 'Use this after â€œthe site brokeâ€ reports. Check what changed recently, then deactivate the newest plugins one by one on staging.', 'upscale-conflict-reporter' ); ?></p>
 
-			<h2><?php esc_html_e( 'Health snapshot', 'hamza-conflict-reporter' ); ?></h2>
+			<h2><?php esc_html_e( 'Health snapshot', 'upscale-conflict-reporter' ); ?></h2>
 			<table class="widefat striped" style="max-width:800px">
 				<tbody>
-					<tr><th><?php esc_html_e( 'WordPress', 'hamza-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['wp'] ); ?></td></tr>
-					<tr><th><?php esc_html_e( 'PHP', 'hamza-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['php'] ); ?></td></tr>
-					<tr><th><?php esc_html_e( 'Theme', 'hamza-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['theme'] ); ?></td></tr>
-					<tr><th><?php esc_html_e( 'Active plugins', 'hamza-conflict-reporter' ); ?></th><td><?php echo esc_html( (string) $snap['active_count'] ); ?></td></tr>
-					<tr><th><?php esc_html_e( 'Memory limit', 'hamza-conflict-reporter' ); ?></th><td><?php echo esc_html( (string) $snap['memory_limit'] ); ?></td></tr>
-					<tr><th><?php esc_html_e( 'WP_DEBUG', 'hamza-conflict-reporter' ); ?></th><td><?php echo $snap['debug'] ? esc_html__( 'On', 'hamza-conflict-reporter' ) : esc_html__( 'Off', 'hamza-conflict-reporter' ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'WordPress', 'upscale-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['wp'] ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'PHP', 'upscale-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['php'] ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'Theme', 'upscale-conflict-reporter' ); ?></th><td><?php echo esc_html( $snap['theme'] ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'Active plugins', 'upscale-conflict-reporter' ); ?></th><td><?php echo esc_html( (string) $snap['active_count'] ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'Memory limit', 'upscale-conflict-reporter' ); ?></th><td><?php echo esc_html( (string) $snap['memory_limit'] ); ?></td></tr>
+					<tr><th><?php esc_html_e( 'WP_DEBUG', 'upscale-conflict-reporter' ); ?></th><td><?php echo $snap['debug'] ? esc_html__( 'On', 'upscale-conflict-reporter' ) : esc_html__( 'Off', 'upscale-conflict-reporter' ); ?></td></tr>
 				</tbody>
 			</table>
 
-			<h2><?php esc_html_e( 'Active plugins by file time (newest first)', 'hamza-conflict-reporter' ); ?></h2>
-			<p class="description"><?php esc_html_e( 'Newest files are the first suspects after a conflict.', 'hamza-conflict-reporter' ); ?></p>
+			<h2><?php esc_html_e( 'Active plugins by file time (newest first)', 'upscale-conflict-reporter' ); ?></h2>
+			<p class="description"><?php esc_html_e( 'Newest files are the first suspects after a conflict.', 'upscale-conflict-reporter' ); ?></p>
 			<table class="widefat striped">
-				<thead><tr><th><?php esc_html_e( 'Plugin', 'hamza-conflict-reporter' ); ?></th><th><?php esc_html_e( 'File', 'hamza-conflict-reporter' ); ?></th><th><?php esc_html_e( 'File time', 'hamza-conflict-reporter' ); ?></th></tr></thead>
+				<thead><tr><th><?php esc_html_e( 'Plugin', 'upscale-conflict-reporter' ); ?></th><th><?php esc_html_e( 'File', 'upscale-conflict-reporter' ); ?></th><th><?php esc_html_e( 'File time', 'upscale-conflict-reporter' ); ?></th></tr></thead>
 				<tbody>
 				<?php foreach ( $snap['recent_active'] as $row ) : ?>
 					<tr>
@@ -197,12 +197,12 @@ final class PCR_Plugin {
 				</tbody>
 			</table>
 
-			<h2><?php esc_html_e( 'Recent change log', 'hamza-conflict-reporter' ); ?></h2>
+			<h2><?php esc_html_e( 'Recent change log', 'upscale-conflict-reporter' ); ?></h2>
 			<table class="widefat striped">
-				<thead><tr><th><?php esc_html_e( 'When', 'hamza-conflict-reporter' ); ?></th><th><?php esc_html_e( 'Type', 'hamza-conflict-reporter' ); ?></th><th><?php esc_html_e( 'Event', 'hamza-conflict-reporter' ); ?></th></tr></thead>
+				<thead><tr><th><?php esc_html_e( 'When', 'upscale-conflict-reporter' ); ?></th><th><?php esc_html_e( 'Type', 'upscale-conflict-reporter' ); ?></th><th><?php esc_html_e( 'Event', 'upscale-conflict-reporter' ); ?></th></tr></thead>
 				<tbody>
 				<?php if ( empty( $log ) ) : ?>
-					<tr><td colspan="3"><?php esc_html_e( 'No events yet. Updates and activate/deactivate actions will appear here.', 'hamza-conflict-reporter' ); ?></td></tr>
+					<tr><td colspan="3"><?php esc_html_e( 'No events yet. Updates and activate/deactivate actions will appear here.', 'upscale-conflict-reporter' ); ?></td></tr>
 				<?php else : ?>
 					<?php foreach ( array_slice( $log, 0, 40 ) as $event ) : ?>
 						<tr>

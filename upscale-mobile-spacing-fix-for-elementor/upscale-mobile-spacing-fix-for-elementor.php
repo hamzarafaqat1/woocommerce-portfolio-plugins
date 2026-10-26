@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Hamza Mobile Spacing Fix for Elementor
+ * Plugin Name:       Upscale Mobile Spacing Fix for Elementor
  * Plugin URI:        https://github.com/hamzarafaqat1/woocommerce-portfolio-plugins
  * Description:       Fix common Elementor mobile spacing issues: remove huge gaps, normalize section padding, and tame widget margins on small screens.
  * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
- * Author:            Hamza R.
- * Author URI:        https://github.com/hamzarafaqat1
+ * Author:            Upscale Solutions
+ * Author URI:        https://upscalesolutions.digital
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       hamza-mobile-spacing-fix-for-elementor
+ * Text Domain:       upscale-mobile-spacing-fix-for-elementor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

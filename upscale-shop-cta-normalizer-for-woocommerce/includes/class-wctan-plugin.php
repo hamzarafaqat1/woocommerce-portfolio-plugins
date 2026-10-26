@@ -53,8 +53,8 @@ final class WCTAN_Plugin {
 	public static function menu() {
 		add_submenu_page(
 			'woocommerce',
-			__( 'CTA Normalizer', 'hamza-shop-cta-normalizer-for-woocommerce' ),
-			__( 'CTA Normalizer', 'hamza-shop-cta-normalizer-for-woocommerce' ),
+			__( 'CTA Normalizer', 'upscale-shop-cta-normalizer-for-woocommerce' ),
+			__( 'CTA Normalizer', 'upscale-shop-cta-normalizer-for-woocommerce' ),
 			'manage_woocommerce',
 			'wctan-settings',
 			array( __CLASS__, 'render' )
@@ -106,34 +106,34 @@ final class WCTAN_Plugin {
 		$s = self::settings();
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Hamza Shop CTA Normalizer for WooCommerce', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></h1>
-			<p><?php esc_html_e( 'Keep shop buttons consistent so customers are not confused by mixed â€œAdd to cart / Select options / Read moreâ€ labels.', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></p>
+			<h1><?php esc_html_e( 'Upscale Shop CTA Normalizer for WooCommerce', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></h1>
+			<p><?php esc_html_e( 'Keep shop buttons consistent so customers are not confused by mixed â€œAdd to cart / Select options / Read moreâ€ labels.', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></p>
 			<form method="post" action="options.php">
 				<?php settings_fields( 'wctan_group' ); ?>
 				<table class="form-table">
 					<tr>
-						<th><?php esc_html_e( 'Normalize labels', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
-						<td><label><input type="checkbox" name="wctan_settings[unify_labels]" value="1" <?php checked( $s['unify_labels'], 1 ); ?> /> <?php esc_html_e( 'On', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
+						<th><?php esc_html_e( 'Normalize labels', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<td><label><input type="checkbox" name="wctan_settings[unify_labels]" value="1" <?php checked( $s['unify_labels'], 1 ); ?> /> <?php esc_html_e( 'On', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Simple product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<th><?php esc_html_e( 'Simple product', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[simple_label]" value="<?php echo esc_attr( $s['simple_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Variable product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<th><?php esc_html_e( 'Variable product', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[variable_label]" value="<?php echo esc_attr( $s['variable_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'External product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<th><?php esc_html_e( 'External product', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[external_label]" value="<?php echo esc_attr( $s['external_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Grouped product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<th><?php esc_html_e( 'Grouped product', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[grouped_label]" value="<?php echo esc_attr( $s['grouped_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Unify button look', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
-						<td><label><input type="checkbox" name="wctan_settings[style_buttons]" value="1" <?php checked( $s['style_buttons'], 1 ); ?> /> <?php esc_html_e( 'Apply shared CSS on loop buttons', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
+						<th><?php esc_html_e( 'Unify button look', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<td><label><input type="checkbox" name="wctan_settings[style_buttons]" value="1" <?php checked( $s['style_buttons'], 1 ); ?> /> <?php esc_html_e( 'Apply shared CSS on loop buttons', 'upscale-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
 					</tr>
 				</table>
 				<?php submit_button(); ?>

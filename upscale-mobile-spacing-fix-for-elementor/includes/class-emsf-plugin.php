@@ -49,8 +49,8 @@ final class EMSF_Plugin {
 	 */
 	public static function menu() {
 		add_options_page(
-			__( 'Elementor Mobile Spacing', 'hamza-mobile-spacing-fix-for-elementor' ),
-			__( 'Elementor Mobile Spacing', 'hamza-mobile-spacing-fix-for-elementor' ),
+			__( 'Elementor Mobile Spacing', 'upscale-mobile-spacing-fix-for-elementor' ),
+			__( 'Elementor Mobile Spacing', 'upscale-mobile-spacing-fix-for-elementor' ),
 			'manage_options',
 			'emsf-settings',
 			array( __CLASS__, 'render_settings' )
@@ -101,30 +101,30 @@ final class EMSF_Plugin {
 		$s = self::settings();
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Hamza Mobile Spacing Fix for Elementor', 'hamza-mobile-spacing-fix-for-elementor' ); ?></h1>
-			<p><?php esc_html_e( 'Caps oversized padding/margins on small screens so Elementor pages stop looking broken on phones.', 'hamza-mobile-spacing-fix-for-elementor' ); ?></p>
+			<h1><?php esc_html_e( 'Upscale Mobile Spacing Fix for Elementor', 'upscale-mobile-spacing-fix-for-elementor' ); ?></h1>
+			<p><?php esc_html_e( 'Caps oversized padding/margins on small screens so Elementor pages stop looking broken on phones.', 'upscale-mobile-spacing-fix-for-elementor' ); ?></p>
 			<form method="post" action="options.php">
 				<?php settings_fields( 'emsf_settings_group' ); ?>
 				<table class="form-table" role="presentation">
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Enable fixes', 'hamza-mobile-spacing-fix-for-elementor' ); ?></th>
-						<td><label><input type="checkbox" name="emsf_settings[enabled]" value="1" <?php checked( $s['enabled'], 1 ); ?> /> <?php esc_html_e( 'On', 'hamza-mobile-spacing-fix-for-elementor' ); ?></label></td>
+						<th scope="row"><?php esc_html_e( 'Enable fixes', 'upscale-mobile-spacing-fix-for-elementor' ); ?></th>
+						<td><label><input type="checkbox" name="emsf_settings[enabled]" value="1" <?php checked( $s['enabled'], 1 ); ?> /> <?php esc_html_e( 'On', 'upscale-mobile-spacing-fix-for-elementor' ); ?></label></td>
 					</tr>
 					<tr>
-						<th scope="row"><label for="emsf_bp"><?php esc_html_e( 'Mobile breakpoint (px)', 'hamza-mobile-spacing-fix-for-elementor' ); ?></label></th>
+						<th scope="row"><label for="emsf_bp"><?php esc_html_e( 'Mobile breakpoint (px)', 'upscale-mobile-spacing-fix-for-elementor' ); ?></label></th>
 						<td><input name="emsf_settings[breakpoint]" id="emsf_bp" type="number" min="320" max="1024" value="<?php echo esc_attr( (string) $s['breakpoint'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th scope="row"><label for="emsf_pad"><?php esc_html_e( 'Max section padding (px)', 'hamza-mobile-spacing-fix-for-elementor' ); ?></label></th>
+						<th scope="row"><label for="emsf_pad"><?php esc_html_e( 'Max section padding (px)', 'upscale-mobile-spacing-fix-for-elementor' ); ?></label></th>
 						<td><input name="emsf_settings[max_section_pad]" id="emsf_pad" type="number" min="0" max="200" value="<?php echo esc_attr( (string) $s['max_section_pad'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th scope="row"><label for="emsf_mar"><?php esc_html_e( 'Max widget margin (px)', 'hamza-mobile-spacing-fix-for-elementor' ); ?></label></th>
+						<th scope="row"><label for="emsf_mar"><?php esc_html_e( 'Max widget margin (px)', 'upscale-mobile-spacing-fix-for-elementor' ); ?></label></th>
 						<td><input name="emsf_settings[max_widget_margin]" id="emsf_mar" type="number" min="0" max="200" value="<?php echo esc_attr( (string) $s['max_widget_margin'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th scope="row"><?php esc_html_e( 'Collapse empty spacer gaps', 'hamza-mobile-spacing-fix-for-elementor' ); ?></th>
-						<td><label><input type="checkbox" name="emsf_settings[collapse_empty_gap]" value="1" <?php checked( $s['collapse_empty_gap'], 1 ); ?> /> <?php esc_html_e( 'Reduce tall Elementor spacers on mobile', 'hamza-mobile-spacing-fix-for-elementor' ); ?></label></td>
+						<th scope="row"><?php esc_html_e( 'Collapse empty spacer gaps', 'upscale-mobile-spacing-fix-for-elementor' ); ?></th>
+						<td><label><input type="checkbox" name="emsf_settings[collapse_empty_gap]" value="1" <?php checked( $s['collapse_empty_gap'], 1 ); ?> /> <?php esc_html_e( 'Reduce tall Elementor spacers on mobile', 'upscale-mobile-spacing-fix-for-elementor' ); ?></label></td>
 					</tr>
 				</table>
 				<?php submit_button(); ?>
