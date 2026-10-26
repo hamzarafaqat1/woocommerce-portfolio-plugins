@@ -53,8 +53,8 @@ final class WCTAN_Plugin {
 	public static function menu() {
 		add_submenu_page(
 			'woocommerce',
-			__( 'CTA Normalizer', 'woo-cta-normalizer' ),
-			__( 'CTA Normalizer', 'woo-cta-normalizer' ),
+			__( 'CTA Normalizer', 'hamza-shop-cta-normalizer-for-woocommerce' ),
+			__( 'CTA Normalizer', 'hamza-shop-cta-normalizer-for-woocommerce' ),
 			'manage_woocommerce',
 			'wctan-settings',
 			array( __CLASS__, 'render' )
@@ -106,34 +106,34 @@ final class WCTAN_Plugin {
 		$s = self::settings();
 		?>
 		<div class="wrap">
-			<h1><?php esc_html_e( 'Woo CTA Normalizer', 'woo-cta-normalizer' ); ?></h1>
-			<p><?php esc_html_e( 'Keep shop buttons consistent so customers are not confused by mixed “Add to cart / Select options / Read more” labels.', 'woo-cta-normalizer' ); ?></p>
+			<h1><?php esc_html_e( 'Hamza Shop CTA Normalizer for WooCommerce', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></h1>
+			<p><?php esc_html_e( 'Keep shop buttons consistent so customers are not confused by mixed â€œAdd to cart / Select options / Read moreâ€ labels.', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></p>
 			<form method="post" action="options.php">
 				<?php settings_fields( 'wctan_group' ); ?>
 				<table class="form-table">
 					<tr>
-						<th><?php esc_html_e( 'Normalize labels', 'woo-cta-normalizer' ); ?></th>
-						<td><label><input type="checkbox" name="wctan_settings[unify_labels]" value="1" <?php checked( $s['unify_labels'], 1 ); ?> /> <?php esc_html_e( 'On', 'woo-cta-normalizer' ); ?></label></td>
+						<th><?php esc_html_e( 'Normalize labels', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<td><label><input type="checkbox" name="wctan_settings[unify_labels]" value="1" <?php checked( $s['unify_labels'], 1 ); ?> /> <?php esc_html_e( 'On', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Simple product', 'woo-cta-normalizer' ); ?></th>
+						<th><?php esc_html_e( 'Simple product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[simple_label]" value="<?php echo esc_attr( $s['simple_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Variable product', 'woo-cta-normalizer' ); ?></th>
+						<th><?php esc_html_e( 'Variable product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[variable_label]" value="<?php echo esc_attr( $s['variable_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'External product', 'woo-cta-normalizer' ); ?></th>
+						<th><?php esc_html_e( 'External product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[external_label]" value="<?php echo esc_attr( $s['external_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Grouped product', 'woo-cta-normalizer' ); ?></th>
+						<th><?php esc_html_e( 'Grouped product', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
 						<td><input class="regular-text" name="wctan_settings[grouped_label]" value="<?php echo esc_attr( $s['grouped_label'] ); ?>" /></td>
 					</tr>
 					<tr>
-						<th><?php esc_html_e( 'Unify button look', 'woo-cta-normalizer' ); ?></th>
-						<td><label><input type="checkbox" name="wctan_settings[style_buttons]" value="1" <?php checked( $s['style_buttons'], 1 ); ?> /> <?php esc_html_e( 'Apply shared CSS on loop buttons', 'woo-cta-normalizer' ); ?></label></td>
+						<th><?php esc_html_e( 'Unify button look', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></th>
+						<td><label><input type="checkbox" name="wctan_settings[style_buttons]" value="1" <?php checked( $s['style_buttons'], 1 ); ?> /> <?php esc_html_e( 'Apply shared CSS on loop buttons', 'hamza-shop-cta-normalizer-for-woocommerce' ); ?></label></td>
 					</tr>
 				</table>
 				<?php submit_button(); ?>

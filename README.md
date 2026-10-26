@@ -27,11 +27,11 @@ Each folder is a standalone WordPress plugin you can copy into `wp-content/plugi
 ### WordPress.org–ready (pain-point plugins)
 | Folder | Description |
 |--------|-------------|
-| `elementor-mobile-spacing-fixer` | Cap Elementor mobile padding/margins/spacers |
-| `woo-cta-normalizer` | Consistent shop CTA labels + button styling |
-| `plugin-conflict-reporter` | Update/activation log + conflict health snapshot |
+| `hamza-mobile-spacing-fix-for-elementor` | Cap Elementor mobile padding/margins/spacers |
+| `hamza-shop-cta-normalizer-for-woocommerce` | Consistent shop CTA labels + button styling |
+| `hamza-conflict-reporter` | Update/activation log + conflict health snapshot |
 
-Each of those three includes `readme.txt` + `uninstall.php` for directory submission.
+Each includes `readme.txt` + `uninstall.php`. Names avoid trademark-leading terms for directory review.
 
 ## License
 
