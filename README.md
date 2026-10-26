@@ -24,6 +24,15 @@ Each folder is a standalone WordPress plugin you can copy into `wp-content/plugi
 | `wc-product-quick-duplicate` | Quick duplicate products |
 | `wc-role-based-pricing` | Role / wholesale pricing |
 
+### WordPress.org–ready (pain-point plugins)
+| Folder | Description |
+|--------|-------------|
+| `elementor-mobile-spacing-fixer` | Cap Elementor mobile padding/margins/spacers |
+| `woo-cta-normalizer` | Consistent shop CTA labels + button styling |
+| `plugin-conflict-reporter` | Update/activation log + conflict health snapshot |
+
+Each of those three includes `readme.txt` + `uninstall.php` for directory submission.
+
 ## License
 
 GPL-2.0-or-later
